@@ -9,9 +9,7 @@ alias prom-package-manager:start='cd ~/prom-all; sh ProMPM69.sh'
 alias prom-lite:start='cd ~/prom-all/ProM-Lite/Resources; sh ProMLite12.sh'
 alias xesame:start='cd ~/prom-all; sh XESame19.sh'
 ## GIT
-alias gs="git status"
-alias cmp="!f() { git add -A && git commit -m \"$@\" && git push; }"
-
+alias gs="git status" 
 
 ##OTHER
 function cmp() {
