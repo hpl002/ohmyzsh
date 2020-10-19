@@ -14,8 +14,13 @@ alias cmp="!f() { git add -A && git commit -m \"$@\" && git push; }"
 
 
 ##OTHER
-function lazygit() {
+function cmp() {
     git add .
     git commit -a -m "$1"
     git push
+}
+
+function cm() {
+    git add .
+    git commit -a -m "$1"     
 }
