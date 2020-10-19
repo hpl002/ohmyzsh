@@ -10,5 +10,12 @@ alias prom-lite:start='cd ~/prom-all/ProM-Lite/Resources; sh ProMLite12.sh'
 alias xesame:start='cd ~/prom-all; sh XESame19.sh'
 ## GIT
 alias gs="git status"
+alias cmp="!f() { git add -A && git commit -m \"$@\" && git push; }"
+
+
 ##OTHER
-alias zshrc=" cd ~ && code ./.zshrc"
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
